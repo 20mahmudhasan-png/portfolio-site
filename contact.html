@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact | Mahmud Hasan</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  <header>
+	  <button class="theme-toggle" onclick="toggleTheme()">🌙</button>
+    <nav class="navbar">
+  <h1 class="logo">Mahmud Hasan</h1>
+  <ul class="nav-links">
+    <li><a href="index.html" class="active">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="lab.html">Tech Lab</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+  <button class="theme-toggle" onclick="toggleTheme()">🌙</button>
+</nav>
+  </header>
+
+  <main class="contact-container">
+    <section class="contact-intro">
+      <h2>Contact Me</h2>
+      <p>Have a question or feedback? I’d love to hear from you.</p>
+    </section>
+
+    <form class="contact-form" onsubmit="return handleSubmit(event)">
+      <div class="form-group">
+        <label for="name">Mahmud Hasan</label>
+        <input type="text" id="name" required>
+      </div>
+
+      <div class="form-group">
+        <label for="email">20mahmuduhasan@gmail.com</label>
+        <input type="email" id="email" required>
+      </div>
+
+      <div class="form-group">
+        <label for="message">Message</label>
+        <textarea id="message" rows="5" required></textarea>
+      </div>
+
+      <button type="submit" class="btn">Send Message</button>
+      <p id="form-status" class="status-message"></p>
+    </form>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Mahmud Hasan | All Rights Reserved</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
